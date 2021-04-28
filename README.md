@@ -20,4 +20,4 @@
 
 **（3）subject**
 
-`subject`是 commit 目的的
+`subject`是 commit 目的的描述
