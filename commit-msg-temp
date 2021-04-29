@@ -7,6 +7,9 @@ isTerminal =  os.isatty(sys.stdout.fileno())
 commitMessageFile = open(sys.argv[1])
 commitMessage = commitMessageFile.read().strip()
 
+if commitMessage.startswith('Merge'):
+  sys.exit(0)
+
 result_list =  commitMessage.split(':')
 if len(result_list) < 3:
   if isTerminal is True:
