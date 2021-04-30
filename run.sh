@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 
-if [ $1 == "python3" ];then
+if [ ! -d ".git" ]; then
+  echo -e "\033[31m\033[01m\033[05mError:当前目录下没有.git文件夹，请在项目根目录下执行命令\033[0m"
+  exit 8
+fi
+
+if [[ $1 == "python3" ]];then
     curl -L https://raw.githubusercontent.com/helloted/commit-msg/master/commit-msg-python3 -o commit-msg
 else
     curl -L https://raw.githubusercontent.com/helloted/commit-msg/master/commit-msg-python -o commit-msg
