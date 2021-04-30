@@ -7,6 +7,9 @@ isTerminal =  os.isatty(sys.stdout.fileno())
 commitMessageFile = open(sys.argv[1])
 commitMessage = commitMessageFile.read().strip()
 
+if commitMessage.startswith('Ignore'):
+  sys.exit(0)
+
 if commitMessage.startswith('Merge'):
   sys.exit(0)
 
