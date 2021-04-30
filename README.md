@@ -1,3 +1,17 @@
+初始化，在项目跟目录下执行：
+
+如果是python2环境
+
+```
+bash <(curl -L -s https://raw.githubusercontent.com/helloted/commit-msg/master/run.sh)
+```
+
+如果是python3环境
+
+```
+bash <(curl -L -s https://raw.githubusercontent.com/helloted/commit-msg/master/run.sh) python3
+```
+
 包括三个字段：`type`（必需）、`scope`（必需）和`subject`（必需）。
 
 **（1）type**
@@ -20,4 +34,4 @@
 
 **（3）subject**
 
-`subject`是 commit 目的的详细描述
+`subject`是 commit 目的的详细
