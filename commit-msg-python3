@@ -3,11 +3,8 @@
 import sys, re,os
 
 isTerminal =  os.isatty(sys.stdout.fileno())
-# commitMessageFile = open(sys.argv[1])
-# commitMessage = commitMessageFile.read().strip()
-
-commitMessage = '1:2:3'
-
+commitMessageFile = open(sys.argv[1])
+commitMessage = commitMessageFile.read().strip()
 
 if commitMessage.startswith('Ignore'):
   sys.exit(0)
