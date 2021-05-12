@@ -3,13 +3,13 @@
 如果是python2环境
 
 ```
-bash <(curl -L -s https://raw.githubusercontent.com/helloted/commit-msg/master/run.sh)
+bash <(curl -L -s https://raw.githubusercontent.com/helloted/commit-msg/master/run.sh) python2
 ```
 
 如果是python3环境
 
 ```
-bash <(curl -L -s https://raw.githubusercontent.com/helloted/commit-msg/master/run.sh) python3
+bash <(curl -L -s https://raw.githubusercontent.com/helloted/commit-msg/master/run.sh) 
 ```
 
 包括三个字段：`type`（必需）、`scope`（必需）和`subject`（必需）。
