@@ -43,5 +43,5 @@ bash <(curl -L -s https://raw.githubusercontent.com/helloted/commit-msg/master/r
 #### 三、忽略
 
 ```
-提交信息内包含Ignore将忽略检查提交
+提交信息内包含Ignore将忽略检查
 ```
