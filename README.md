@@ -1,16 +1,20 @@
-初始化，在项目跟目录下执行：
+#### 一、初始化
+
+在项目的根目录下执行：
 
 如果是python2环境
 
 ```
-bash <(curl -L -s https://raw.githubusercontent.com/helloted/commit-msg/master/run.sh)
+bash <(curl -L -s https://raw.githubusercontent.com/helloted/commit-msg/master/run.sh) python2
 ```
 
 如果是python3环境
 
 ```
-bash <(curl -L -s https://raw.githubusercontent.com/helloted/commit-msg/master/run.sh) python3
+bash <(curl -L -s https://raw.githubusercontent.com/helloted/commit-msg/master/run.sh) 
 ```
+
+#### 二、提交规范
 
 包括三个字段：`type`（必需）、`scope`（必需）和`subject`（必需）。
 
@@ -35,3 +39,9 @@ bash <(curl -L -s https://raw.githubusercontent.com/helloted/commit-msg/master/r
 **（3）subject**
 
 `subject`是 commit 目的的详细
+
+#### 三、忽略
+
+```
+提交信息内包含Ignore将忽略检查提交
+```
