@@ -36,7 +36,7 @@ chore:构建过程或辅助工具的变动"%(c_type))
   sys.exit(1)
 
 return_code,output = commands.getstatusoutput('git symbolic-ref --short HEAD')
-branch = '[{}]'.format(output)
+branch = '【{}】'.format(output)
 commitMessage = branch+commitMessage
 file = open(sys.argv[1], "w" )
 file.write(commitMessage)
